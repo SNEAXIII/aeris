@@ -120,8 +120,9 @@ visibility is worth more than short IDs, and it avoids a second account.
 - `pnpm gen:readme` generates the extension table and the applied-settings
   section from `package.json`, between `<!-- gen:start -->` markers. The list
   lives in exactly one place.
-- One mark, nine tints (`pnpm gen:logos`): three stacked chevrons — the layering
-  the family is built on — drawn in the colour of the ecosystem each pack serves
+- One mark, nine tints (`pnpm gen:logos`): a rocket whose exhaust is three
+  stacked chevrons — the layering the family is built on — drawn in the colour
+  of the ecosystem each pack serves
   (Rust orange, TypeScript blue, Vue green…), so a pack is identifiable at 24px
   in the extensions list. The mark is generated from SVG, never hand-edited.
 

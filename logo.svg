@@ -1,6 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
   <rect width="256" height="256" rx="58" fill="#15171C"/>
-  <path d="M 72 198 L 128 152 L 184 198" fill="none" stroke="#8B95A8" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
-  <path d="M 72 154 L 128 108 L 184 154" fill="none" stroke="#8B95A8" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" opacity="0.62"/>
-  <path d="M 72 110 L 128 64 L 184 110" fill="none" stroke="#8B95A8" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+
+  <!-- fins, flush with the base so they read as part of the hull -->
+  <path d="M 98 126 L 64 176 L 98 168 Z" fill="#8B95A8" opacity="0.5"/>
+  <path d="M 158 126 L 192 176 L 158 168 Z" fill="#8B95A8" opacity="0.5"/>
+
+  <!-- body -->
+  <path d="M 128 32 C 152 64 158 104 158 144 L 158 168 L 98 168 L 98 144 C 98 104 104 64 128 32 Z" fill="#8B95A8"/>
+  <circle cx="128" cy="94" r="17" fill="#15171C"/>
+  <rect x="111" y="168" width="34" height="11" rx="4" fill="#8B95A8" opacity="0.75"/>
+
+  <!-- exhaust: the same three layers as the packs -->
+  <path d="M 100 206 L 128 184 L 156 206" fill="none" stroke="#8B95A8" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+  <path d="M 100 230 L 128 208 L 156 230" fill="none" stroke="#8B95A8" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"/>
 </svg>
