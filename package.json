@@ -2,16 +2,18 @@
   "name": "aeris",
   "private": true,
   "version": "0.0.0",
-  "description": "Aeris — a family of layered VS Code extension packs.",
+  "description": "Aeris \u2014 a family of layered VS Code extension packs.",
   "scripts": {
     "verify:ids": "node scripts/verify-ids.mjs",
     "gen:readme": "node scripts/gen-readme.mjs",
     "publish:changed": "node scripts/publish-changed.mjs",
-    "release": "pnpm gen:readme && pnpm verify:ids && pnpm publish:changed"
+    "release": "pnpm gen:readme && pnpm verify:ids && pnpm publish:changed",
+    "gen:logos": "node scripts/gen-logos.mjs"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.0",
-    "@vscode/vsce": "^3.2.0"
+    "@vscode/vsce": "^3.2.0",
+    "sharp": "^0.35.4"
   },
   "packageManager": "pnpm@9.12.0"
 }
