@@ -1,0 +1,30 @@
+name: Extension health
+
+# We own none of the extensions we distribute. A rename or an unpublish upstream
+# breaks installs silently, so this asks the marketplace every week.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: verify
+        run: node scripts/verify-ids.mjs --fail-on=warn | tee report.txt
+        continue-on-error: true
+      - name: Open an issue when something rotted
+        if: steps.verify.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "Extension health: missing or stale entries" \
+            --body "$(cat report.txt)"
