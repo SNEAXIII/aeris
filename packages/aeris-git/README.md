@@ -1,4 +1,6 @@
-# aeris-git
+# Git Essentials — Aeris
+
+GitLens, GitHub Actions and Pull Requests, so history and CI stay inside the editor.
 
 <!-- gen:start -->
 

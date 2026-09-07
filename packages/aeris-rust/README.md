@@ -1,4 +1,6 @@
-# aeris-rust
+# Rust Essentials — Aeris
+
+rust-analyzer with Clippy on save, a native debugger and Cargo.toml tooling.
 
 <!-- gen:start -->
 

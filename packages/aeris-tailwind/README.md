@@ -1,4 +1,6 @@
-# aeris-tailwind
+# Tailwind Essentials — Aeris
+
+Tailwind IntelliSense and class folding, on top of the CSS pack. Opt-in: Tailwind is a project choice.
 
 <!-- gen:start -->
 

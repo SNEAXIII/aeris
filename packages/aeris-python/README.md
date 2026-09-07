@@ -1,4 +1,6 @@
-# aeris-python
+# Python Essentials — Aeris
+
+Pylance, the debugger and Ruff for both linting and formatting.
 
 <!-- gen:start -->
 

@@ -1,4 +1,6 @@
-# aeris-css
+# CSS Essentials — Aeris
+
+Stylelint and BEM naming helpers for stylesheets and single-file components.
 
 <!-- gen:start -->
 

@@ -1,4 +1,6 @@
-# aeris-vue
+# Vue Essentials — Aeris
+
+Vue (Official) and alias-aware go-to-definition, on top of the TypeScript and CSS packs.
 
 <!-- gen:start -->
 

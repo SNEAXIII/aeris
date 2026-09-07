@@ -1,4 +1,6 @@
-# aeris-dx
+# Editor Essentials — Aeris
+
+The base every Aeris pack builds on: inline diagnostics, TODOs, dependency versions and a database client.
 
 <!-- gen:start -->
 

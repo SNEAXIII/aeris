@@ -1,4 +1,6 @@
-# aeris-nuxt
+# Nuxt Essentials — Aeris
+
+The Vue pack plus Nuxtr, for Nuxt project scaffolding and module management.
 
 <!-- gen:start -->
 

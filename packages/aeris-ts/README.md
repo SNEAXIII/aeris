@@ -1,4 +1,6 @@
-# aeris-ts
+# TypeScript Essentials — Aeris
+
+Oxlint, Prettier and readable type errors. No nightly channel, no duplicate of built-in TypeScript.
 
 <!-- gen:start -->
 
