@@ -25,18 +25,22 @@ const exhaust = (y, accent, opacity) =>
 const svg = (accent) => `<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
   <rect width="256" height="256" rx="58" fill="${GROUND}"/>
 
-  <!-- fins, flush with the base so they read as part of the hull -->
-  <path d="M 98 126 L 64 176 L 98 168 Z" fill="${accent}" opacity="0.5"/>
-  <path d="M 158 126 L 192 176 L 158 168 Z" fill="${accent}" opacity="0.5"/>
+  <g transform="translate(0 -10)">
+    <!-- Fins carry a ground-coloured outline: same tint as the hull, they would
+         otherwise melt into it at small sizes. -->
+    <path d="M 98 120 L 58 180 L 98 170 Z" fill="${accent}" opacity="0.5"
+          stroke="${GROUND}" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 158 120 L 198 180 L 158 170 Z" fill="${accent}" opacity="0.5"
+          stroke="${GROUND}" stroke-width="6" stroke-linejoin="round"/>
 
-  <!-- body -->
-  <path d="M 128 32 C 152 64 158 104 158 144 L 158 168 L 98 168 L 98 144 C 98 104 104 64 128 32 Z" fill="${accent}"/>
-  <circle cx="128" cy="94" r="17" fill="${GROUND}"/>
-  <rect x="111" y="168" width="34" height="11" rx="4" fill="${accent}" opacity="0.75"/>
+    <path d="M 128 32 C 152 64 158 104 158 144 L 158 168 L 98 168 L 98 144 C 98 104 104 64 128 32 Z" fill="${accent}"/>
+    <circle cx="128" cy="94" r="17" fill="${GROUND}"/>
+    <rect x="111" y="171" width="34" height="11" rx="4" fill="${accent}" opacity="0.75"/>
 
-  <!-- exhaust: the same three layers as the packs -->
-  ${exhaust(206, accent, 0.85)}
-  ${exhaust(230, accent, 0.38)}
+    <!-- exhaust: the same three layers as the packs -->
+    ${exhaust(210, accent, 0.85)}
+    ${exhaust(234, accent, 0.38)}
+  </g>
 </svg>`;
 
 for (const [dir, accent] of Object.entries(ACCENTS)) {
