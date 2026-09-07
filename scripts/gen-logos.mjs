@@ -38,8 +38,8 @@ const svg = (accent) => `<svg xmlns="http://www.w3.org/2000/svg" width="256" hei
     <rect x="111" y="171" width="34" height="11" rx="4" fill="${accent}" opacity="0.75"/>
 
     <!-- exhaust: the same three layers as the packs -->
-    ${exhaust(210, accent, 0.85)}
-    ${exhaust(234, accent, 0.38)}
+    ${exhaust(218, accent, 0.85)}
+    ${exhaust(240, accent, 0.38)}
   </g>
 </svg>`;
 
