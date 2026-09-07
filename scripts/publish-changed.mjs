@@ -38,15 +38,18 @@ for (const pack of packs) {
   }
   console.log(`publish  ${id} ${already ?? "(new)"} -> ${pack.json.version}`);
   try {
-    execFileSync("npx", ["vsce", "publish", "--no-dependencies", "-p", pat], {
+    // vsce reports "already exists" on stdout, so both streams have to be captured
+    // for the checks below to see anything but "Command failed".
+    const out = execFileSync("npx", ["vsce", "publish", "--no-dependencies", "-p", pat], {
       cwd: `packages/${pack.dir}`,
-      stdio: ["inherit", "inherit", "pipe"],
+      stdio: ["inherit", "pipe", "pipe"],
       shell: true,
       encoding: "utf8",
     });
+    process.stdout.write(out);
     published.push(id);
   } catch (error) {
-    const message = `${error.stderr ?? ""}${error.message ?? ""}`;
+    const message = `${error.stdout ?? ""}${error.stderr ?? ""}${error.message ?? ""}`;
     if (ALREADY_PUBLISHED.test(message)) {
       console.log(`skip     ${id} — already on the marketplace, gallery not indexed yet`);
       continue;
