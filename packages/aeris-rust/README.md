@@ -26,6 +26,27 @@ This pack sets the following defaults. Anything you set yourself wins.
   "[rust]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "errorLens.transmute": {
+    "clippy": {
+      "target": {
+        "source": "clippy"
+      },
+      "decoration": {
+        "dark": {
+          "backgroundColor": "#c586c015",
+          "after": {
+            "color": "#c586c0"
+          }
+        },
+        "light": {
+          "backgroundColor": "#8f3f8f15",
+          "after": {
+            "color": "#8f3f8f"
+          }
+        }
+      }
+    }
   }
 }
 ```
