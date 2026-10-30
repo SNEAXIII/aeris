@@ -18,6 +18,7 @@ const EXCEPTIONS = {
   "stivo.tailwind-fold": "no credible maintained alternative",
   "nuxtr.nuxtr-vscode": "only Nuxt tooling extension on the marketplace",
   "box-of-hats.bemhelper": "only BEM extension with real adoption (191k)",
+  "antfu.goto-alias": "single-purpose go-to-definition fix; finished, not abandoned",
 };
 
 const ids = [...new Set(readPacks().flatMap((p) => p.json.extensionPack ?? []).filter((id) => !isOwnPack(id)))];

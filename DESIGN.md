@@ -82,6 +82,7 @@ Each exception carries its reason, in `scripts/verify-ids.mjs` and here:
 | `stivo.tailwind-fold` | 26.7mo | no credible maintained alternative |
 | `nuxtr.nuxtr-vscode` | 29.7mo | the only Nuxt tooling extension |
 | `Box-Of-Hats.bemhelper` | 15.5mo | the only BEM extension with adoption (191k) |
+| `antfu.goto-alias` | 13.3mo | single-purpose go-to-definition fix; finished |
 
 ### Distribution
 
