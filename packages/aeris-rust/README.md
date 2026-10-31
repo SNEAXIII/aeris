@@ -23,6 +23,11 @@ This pack sets the following defaults. Anything you set yourself wins.
 ```json
 {
   "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.check.extraArgs": [
+    "--",
+    "--cap-lints",
+    "warn"
+  ],
   "[rust]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
